@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Espacial</title>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Logo" class="logo-img">
+            </a>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="roboto-regular" href="contacto.html">Contacto</a></li>
+                <li><a class="roboto-regular" href="equipo.html">Equipo</a></li>
+                <li><a class="roboto-regular" href="reserva.html">Reserva</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section section--bienvenida">
+        <h1 class="section__title--primary roboto-bold"> Bienvenida Misión Visión </h1>
+        <h2 class="section__title">Hola hola</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem totam sed nesciunt cupiditate! Aliquid libero maxime cupiditate vero sint praesentium veniam, non, repudiandae vitae officia a. Corporis voluptatum recusandae voluptas.</p>
+    </section>
+
+    <section class="section section--servicios">
+        <h2 class="section__title">Servicios</h2>
+        <div class="cards__container cards__container--servicios">
+            <div class="card">         
+                <div class="icon card__icon">
+                    <span class="fab fa-facebook-f"></span>
+                </div>
+                <h3 class="card__title">Consultas</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+            </div>
+            <div class="card">
+                <div class="icon card__icon">
+                    <span class="fab fa-facebook-f"></span>
+                </div>
+                <h3 class="card__title">Consultas</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+            </div>
+            <div class="card">
+                <div class="icon card__icon">
+                    <span class="fab fa-facebook-f"></span>
+                </div>
+                <h3 class="card__title">Consultas</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--testimonios">
+        <h2 class="section__title">Testimonios</h2>
+        <div class="cards__container cards__container--testimonios">
+            <div class="card roboto-thin-italic">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+                <p class="roboto-regular">Armando Casas <span>Diciembre, 2024</span></p>
+            </div>
+            <div class="card roboto-thin-italic">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+                <p class="roboto-regular">Armando Casas <span>Diciembre, 2024</span></p>
+            </div>
+            <div class="card roboto-thin-italic">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+                <p class="roboto-regular">Armando Casas <span>Diciembre, 2024</span></p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer roboto-regular">
+        <div class="footer__container">
+            <!-- Enlaces rápidos -->
+            <div class="footer__section">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="footer__section">
+                <p>Teléfono: +1 234 567 890</p>
+                <p>Email: info@ejemplo.com</p>
+                <p>Dirección: Calle Falsa 123, Ciudad</p>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer__section">
+                <div class="icon social-icons">
+                    <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                    <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                    <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                    <a href="#" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 Tu Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

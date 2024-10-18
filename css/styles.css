@@ -1,0 +1,271 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+/* Estilos del navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 100px;
+    position: relative;
+    color: white;
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0; /* Alinea el navbar al borde superior */
+    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
+    z-index: 1000; 
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+.section, section {
+    padding: 40px 100px;
+}
+
+.section .section__title {
+    padding-bottom: 20px;
+}
+
+
+.section--bienvenida {
+    padding-top: 80px;
+}
+
+.cards__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards__container .card {
+    background: pink;
+    padding: 30px;
+    max-width: 32%;
+    border: 1px solid white;
+    border-radius: 14px;
+}
+
+
+.section--testimonios {
+    background-color: lightcoral;
+}
+
+.section--servicios {
+    background-color: lightgreen;
+}
+
+
+
+
+
+/* Estilos del footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0 80px 0;
+    text-align: center;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer__section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 0;
+}
+
+.footer__section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer__section ul {
+    list-style: none;
+}
+
+.footer__section ul li {
+    margin-bottom: 10px;
+}
+
+.footer__section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer__section ul li a:hover {
+    color: #ddd;
+}
+
+/* Estilos para redes sociales */
+.icon a, .icon span {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.icon a:hover {
+    color: #ddd;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .social-icons a {
+        margin: 5px;
+    }
+}
