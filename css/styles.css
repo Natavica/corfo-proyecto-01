@@ -1,149 +1,93 @@
-/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+.body__container {
+    color: #444;
+    margin: 0 auto;
 }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
 
-/* Estilos del navbar */
 .navbar {
     background-color: #333;
     padding: 10px 100px;
-    position: relative;
+    position: fixed; /* Barra fija al hacer scroll */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     color: white;
-    position: fixed; /* Fija el navbar en la parte superior */
-    top: 0; /* Alinea el navbar al borde superior */
-    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
-    z-index: 1000; 
+    font-family: "Titillium Web", sans-serif;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+}
+
 
 .navbar__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
-.logo-img {
+.navbar__img {
     width: 50px;
     height: auto;
 }
 
-.nav-links {
+/* Enlaces en pantallas grandes */
+.navbar__links {
     display: flex;
     list-style: none;
 }
 
-.nav-links li {
+.navbar__links li {
     margin-left: 20px;
 }
 
-.nav-links a {
+.navbar__links a {
     text-decoration: none;
     color: white;
     font-size: 14px;
 }
 
-.menu-icon {
+/* Ícono del menú hamburguesa, inicialmente oculto en pantallas grandes */
+.navbar__icon {
     display: none;
     font-size: 30px;
     color: white;
     cursor: pointer;
 }
 
-/* Responsividad */
+/* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
+    .navbar__links {
+        display: none; /* Ocultar los enlaces en móviles */
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 10px;
+        right: 0;
         background-color: #333;
-        width: 100%;
+        width: 100%; /* Abarcar todo el ancho de la pantalla */
         padding: 10px;
     }
 
-    .nav-links.active {
+    /* Clase activa para mostrar el menú en móviles */
+    .navbar__links.show-menu {
         display: flex;
     }
 
-    .nav-links li {
+    .navbar__links li {
         margin: 10px 0;
     }
 
-    .menu-icon {
+    /* Mostrar el icono hamburguesa en móviles */
+    .navbar__icon {
         display: block;
     }
 }
@@ -151,12 +95,33 @@
 
 .section, section {
     padding: 40px 100px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .section, section {
+        padding: 20px;
+    }
+}
+
+.section__title--primary {
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 48px;
+    padding: 30px;
 }
 
 .section .section__title {
     padding-bottom: 20px;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 30px;
 }
 
+
+.section--bienvenida .section__text {
+  
+}
 
 .section--bienvenida {
     padding-top: 80px;
@@ -167,6 +132,12 @@
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    .cards__container {
+       flex-direction: column;
+    }
+}  
+
 .cards__container .card {
     background: pink;
     padding: 30px;
@@ -175,21 +146,38 @@
     border-radius: 14px;
 }
 
+@media (max-width: 768px) {
+    .cards__container .card {
+        padding: 30px;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.cards__container--servicios .card .card__icon {
+    display: flex;
+}
+
+.cards__container--servicios .card .card__title {
+    display: flex;
+}
+
+.cards__container--servicios .card .card__icon span {
+    text-align: center;
+    margin: 0 auto;
+}
 
 .section--testimonios {
-    background-color: lightcoral;
+  
 }
 
 .section--servicios {
-    background-color: lightgreen;
+    
 }
 
 
-
-
-
-/* Estilos del footer */
 .footer {
+    font-family: "Titillium Web", sans-serif;
     background-color: #333;
     color: white;
     padding: 20px 0 80px 0;
@@ -205,10 +193,25 @@
     padding: 20px;
 }
 
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+    }
+}
+
 .footer__section {
     flex: 1;
-    min-width: 250px;
+    min-width: 33%;
     margin: 10px 0;
+    text-align: justify;
+    padding-left: 110px;
+}
+
+@media (max-width: 768px) {
+    .footer__section {
+        padding-left: 0;
+    }
+    
 }
 
 .footer__section h4 {
@@ -235,7 +238,6 @@
     color: #ddd;
 }
 
-/* Estilos para redes sociales */
 .icon a, .icon span {
     font-size: 24px;
     margin: 0 10px;
@@ -248,13 +250,11 @@
     color: #ddd;
 }
 
-/* Footer bottom */
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;

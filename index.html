@@ -7,32 +7,39 @@
  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   
+   <div class="body__container">
     <nav class="navbar">
         <div class="navbar__container">
             <a href="index.html" class="logo">
-                <img src="logo.png" alt="Logo" class="logo-img">
+                <img src="images/logo-starwars.png" alt="logo starwars" class="navbar__img">
             </a>
-            <div class="menu-icon" onclick="toggleMenu()">
+            <div class="navbar__icon" onclick="toggleMenu()">
                 &#9776; 
             </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a class="roboto-regular" href="contacto.html">Contacto</a></li>
-                <li><a class="roboto-regular" href="equipo.html">Equipo</a></li>
-                <li><a class="roboto-regular" href="reserva.html">Reserva</a></li>
+            <ul class="navbar__links" id="navLinks">
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="section section--bienvenida">
-        <h1 class="section__title--primary roboto-bold"> Bienvenida Misión Visión </h1>
+        <h1 class="section__title--primary"> Bienvenidx a Star Wars Hospital </h1>
         <h2 class="section__title">Hola hola</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem totam sed nesciunt cupiditate! Aliquid libero maxime cupiditate vero sint praesentium veniam, non, repudiandae vitae officia a. Corporis voluptatum recusandae voluptas.</p>
+        <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem totam sed nesciunt cupiditate! Aliquid libero maxime cupiditate vero sint praesentium veniam, non, repudiandae vitae officia a. Corporis voluptatum recusandae voluptas.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos praesentium esse ipsam, unde optio veniam repellendus, eius id magni aspernatur odit itaque. Error dolore ex vitae, repellendus non mollitia. Autem?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sapiente, ab vitae enim blanditiis debitis deleniti praesentium incidunt architecto non. Adipisci nam ratione aliquid eaque quae, deserunt illo aperiam soluta!
+        </p>
     </section>
 
     <section class="section section--servicios">
@@ -42,32 +49,32 @@
                 <div class="icon card__icon">
                     <span class="fab fa-facebook-f"></span>
                 </div>
-                <h3 class="card__title">Consultas</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+                <h3 class="card__title ">Consultas</h3>
+                <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
             </div>
             <div class="card">
                 <div class="icon card__icon">
                     <span class="fab fa-facebook-f"></span>
                 </div>
-                <h3 class="card__title">Consultas</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+                <h3 class="card__title ">Urgencias</h3>
+                <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
             </div>
             <div class="card">
                 <div class="icon card__icon">
                     <span class="fab fa-facebook-f"></span>
                 </div>
-                <h3 class="card__title">Consultas</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+                <h3 class="card__title">Especialidades</h3>
+                <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
             </div>
         </div>
     </section>
 
     <section class="section section--testimonios">
-        <h2 class="section__title">Testimonios</h2>
+        <h2 class="section__title titillium-web-bold">Testimonios</h2>
         <div class="cards__container cards__container--testimonios">
-            <div class="card roboto-thin-italic">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
-                <p class="roboto-regular">Armando Casas <span>Diciembre, 2024</span></p>
+            <div class="card roboto-condensed-italic">
+                <p class="roboto-condensed-regular">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
+                <p><i>Armando Casas </i><span>Diciembre, 2024</span></p>
             </div>
             <div class="card roboto-thin-italic">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione laborum recusandae velit saepe, dignissimos, nobis voluptatibus amet hic impedit repellendus accusamus, magni quas dolorum? Exercitationem quibusdam quam delectus excepturi culpa!</p>
@@ -81,9 +88,8 @@
     </section>
 
     
-    <footer class="footer roboto-regular">
+    <footer class="footer">
         <div class="footer__container">
-            <!-- Enlaces rápidos -->
             <div class="footer__section">
                 <ul>
                     <li><a href="#">Inicio</a></li>
@@ -93,20 +99,19 @@
                 </ul>
             </div>
 
-            <!-- Información de contacto -->
             <div class="footer__section">
-                <p>Teléfono: +1 234 567 890</p>
-                <p>Email: info@ejemplo.com</p>
-                <p>Dirección: Calle Falsa 123, Ciudad</p>
+                <ul>
+                    <li>Teléfono: +1 234 567 890</li>
+                    <li>Email: info@ejemplo.com</li>
+                    <li>Dirección: Calle Falsa 123, Ciudad</li>
+                </ul>
             </div>
 
-            <!-- Redes sociales -->
             <div class="footer__section">
                 <div class="icon social-icons">
                     <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
                     <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
                     <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
-                    <a href="#" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
                 </div>
             </div>
         </div>
@@ -114,7 +119,8 @@
             <p>&copy; 2024 Tu Sitio Web. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+   </div>
+  
     <script src="js/script.js"></script>
 </body>
 </html>
