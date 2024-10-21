@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: rgb(237, 235, 235);
+}
+
 .body__container {
     color: #444;
     margin: 0 auto;
@@ -70,7 +74,7 @@
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: #333;
+        background-color: #1e1e1e;
         width: 100%; 
         padding: 10px 10px 30px;
         border-top: 1px solid #eaeaea;
@@ -111,15 +115,29 @@
     color:  #4ba6a6;
 }
 
+.container__section__title .section__title {
+    background-color: #c0e0dd;
+    border-radius: 14px;
+    padding: 20px  30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .section .section__title {
     padding-bottom: 20px;
     font-family: "Titillium Web", sans-serif;
     font-size: 30px;
 }
 
+.container__section__title  p {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
 
-.section--bienvenida .section__text {
-  
+.section .section__text {
+  padding-bottom: 30px;
 }
 
 .section--bienvenida {
@@ -223,7 +241,8 @@
 
 .section--equipo .card__img {
     border-radius: 400px;
-    height: 100px;
+    width: 100%;
+    max-width: 200px;
  
 }
 
@@ -489,5 +508,56 @@
         width: 100%;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+}
+
+
+fieldset {
+    border: 1px solid transparent;
+}
+
+legend {
+    margin-bottom: 20px;
+}
+
+
+.container__hospital {
+   display: flex; 
+   padding-bottom: 30px;
+   justify-content: space-between;
+   padding: 20px;
+   background: white;
+   border-radius: 14px;
+   align-items: center;
+}
+
+.container__hospital .section__text {
+    max-width: 60%;
+    padding-right: 30px;
+}
+.container__hospital .section__img img {
+    max-width: 300px;
+    border-radius: 14px;
+}
+
+.section__title--mision, .section__title--vision {
+    font-size: 18px;
+    color: #4ba6a6;
+    font-weight: 400;
+}
+
+.container__hospital {
+    
+}
+
+@media (max-width: 768px) {
+    .container__hospital {
+        flex-direction: column;
+    }
+    .container__hospital .section__text {
+        max-width: 100%;
+    }
+    .section__img {
+        margin: 0 auto;
     }
 }
