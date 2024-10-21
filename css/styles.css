@@ -12,7 +12,7 @@
 .navbar {
     background-color: #333;
     padding: 20px 100px;
-    position: fixed; /* Barra fija al hacer scroll */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -40,7 +40,6 @@
     height: auto;
 }
 
-/* Enlaces en pantallas grandes */
 .navbar__links {
     display: flex;
     align-items: center;
@@ -57,7 +56,6 @@
     font-size: 14px;
 }
 
-/* Ícono del menú hamburguesa, inicialmente oculto en pantallas grandes */
 .navbar__icon {
     display: none;
     font-size: 30px;
@@ -65,22 +63,20 @@
     cursor: pointer;
 }
 
-/* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
     .navbar__links {
-        display: none; /* Ocultar los enlaces en móviles */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 60px;
         right: 0;
         background-color: #333;
-        width: 100%; /* Abarcar todo el ancho de la pantalla */
+        width: 100%; 
         padding: 10px 10px 30px;
         border-top: 1px solid #eaeaea;
         margin-top: 20px;
     }
 
-    /* Clase activa para mostrar el menú en móviles */
     .navbar__links.show-menu {
         display: flex;
     }
@@ -89,7 +85,6 @@
         margin: 10px 0;
     }
 
-    /* Mostrar el icono hamburguesa en móviles */
     .navbar__icon {
         display: block;
     }
@@ -113,7 +108,7 @@
     font-family: "Titillium Web", sans-serif;
     font-size: 48px;
     padding: 80px 30px 30px;
-   color:  #4ba6a6;
+    color:  #4ba6a6;
 }
 
 .section .section__title {
@@ -234,7 +229,6 @@
 
 .footer {
     font-family: "Titillium Web", sans-serif;
-    /* background-color: #4ba6a6; */
     background-color: #c0e0dd;;
     color: #444;
     padding: 28px 0 80px 0;
