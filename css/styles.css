@@ -11,7 +11,7 @@
 
 .navbar {
     background-color: #333;
-    padding: 10px 100px;
+    padding: 20px 100px;
     position: fixed; /* Barra fija al hacer scroll */
     top: 0;
     width: 100%;
@@ -43,6 +43,7 @@
 /* Enlaces en pantallas grandes */
 .navbar__links {
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
@@ -74,7 +75,9 @@
         right: 0;
         background-color: #333;
         width: 100%; /* Abarcar todo el ancho de la pantalla */
-        padding: 10px;
+        padding: 10px 10px 30px;
+        border-top: 1px solid #eaeaea;
+        margin-top: 20px;
     }
 
     /* Clase activa para mostrar el menú en móviles */
@@ -101,7 +104,7 @@
 
 @media (max-width: 768px) {
     .section, section {
-        padding: 20px;
+        padding: 20px 20px 30px;
     }
 }
 
@@ -109,7 +112,8 @@
     text-align: center;
     font-family: "Titillium Web", sans-serif;
     font-size: 48px;
-    padding: 30px;
+    padding: 80px 30px 30px;
+   color:  #4ba6a6;
 }
 
 .section .section__title {
@@ -139,37 +143,84 @@
 }  
 
 .cards__container .card {
-    background: pink;
-    padding: 30px;
+    background: #c0e0dd;
     max-width: 32%;
-    border: 1px solid white;
     border-radius: 14px;
 }
 
 @media (max-width: 768px) {
     .cards__container .card {
-        padding: 30px;
         max-width: 100%;
         margin-top: 10px;
     }
 }
 
-.cards__container--servicios .card .card__icon {
+.card--top {
+    padding: 26px 20px 16px 20px;
+}
+
+.card--bottom {
+    padding: 0 20px 30px 20px;
+}
+
+.cards__container--servicios .card .card--top .card__icon {
     display: flex;
 }
 
-.cards__container--servicios .card .card__title {
-    display: flex;
+.card__line {
+    height: 1px;
+    width: 100%;
+    background: #eaeaea;
+    margin-bottom: 20px;
 }
 
-.cards__container--servicios .card .card__icon span {
+
+.cards__container--servicios .card .card--top .card__title {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+
+}
+
+.cards__container--servicios .card .card__icon i {
     text-align: center;
     margin: 0 auto;
-}
-
-.section--testimonios {
+    font-size: 30px;
+    color: rgba(7, 60, 60, 0.528);
+    padding-bottom: 12px;
   
 }
+
+.section--testimonios .card  {
+    padding: 20px;
+    background: white;
+    border: 1px solid #4ba6a6;
+}
+
+.section--testimonios .card .card__text {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    
+}
+
+.section--testimonios .card .card__text span {
+    padding-top: 10px;
+    display: block;
+    color:  #4ba6a6;
+}
+
+.section--testimonios .card .card__text--name {
+    font-size: 16px;
+    font-weight: 400;
+      
+}
+
+.section--testimonios .card .card__text--date {
+    margin-left: 10px;
+      
+}
+
 
 .section--servicios {
     
@@ -183,9 +234,10 @@
 
 .footer {
     font-family: "Titillium Web", sans-serif;
-    background-color: #333;
-    color: white;
-    padding: 20px 0 80px 0;
+    /* background-color: #4ba6a6; */
+    background-color: #c0e0dd;;
+    color: #444;
+    padding: 28px 0 80px 0;
     text-align: center;
 }
 
@@ -215,8 +267,9 @@
 @media (max-width: 768px) {
     .footer__section {
         padding-left: 0;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 18px;
     }
-    
 }
 
 .footer__section h4 {
@@ -232,27 +285,33 @@
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+    .footer__section ul li {
+        margin-bottom: 0;
+    }
+}
+
 .footer__section ul li a {
-    color: white;
+    color: #444;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
 }
 
 .footer__section ul li a:hover {
-    color: #ddd;
+    color: #4ba6a6;
 }
 
 .icon a, .icon span {
     font-size: 24px;
     margin: 0 10px;
-    color: white;
+    color: #444;
     text-decoration: none;
     transition: color 0.3s, transform 0.3s ease;
 }
 
 .icon a:hover {
-    color: #ddd;
+    color: #4ba6a6;
 }
 
 .footer-bottom {
@@ -332,4 +391,38 @@
 .map {
     width: 100%;
     height: 400px;
+}
+
+.navbar__links__item--cta a {
+    color: #444;
+    background: #c0e0dd;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+
+.navbar__links__item--cta a:hover {
+    background: rgb(135, 181, 176);
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: white;
+}
+
+.section {
+    font-size: 14px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.footer__bottom {
+    border-top: 1px solid #eaeaea;
+}
+
+.footer__bottom p {
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer__bottom {
+        border-top: inherit;
+    }
 }
