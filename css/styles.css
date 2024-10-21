@@ -420,3 +420,41 @@
         border-top: inherit;
     }
 }
+
+
+.section--equipo .card {
+    /* background: pink; */
+    max-width: 24%;
+    padding: 20px;
+}
+
+.section--equipo .card .card__img {
+    margin: 0 auto;
+    display: block;
+}
+
+.section--equipo .card ul {
+    list-style: none;
+}
+
+.section--equipo .card .card__text--nombre {
+    font-size: 18px;
+    padding-top: 20px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.section--equipo .card .card__text--especialidad {
+    font-size: 14px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+.section--equipo .card {
+    background: white;
+    border: 1px solid #4ba6a6;
+}
+
