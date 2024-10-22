@@ -16,72 +16,77 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <main class="body__container">
-        <nav class="navbar">
-            <div class="navbar__container">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/logo--swh.png" alt="logo starwars hospital" class="navbar__img">
-                </a>
-                <div class="navbar__icon" onclick="toggleMenu()">
-                    &#9776; 
+    <div class="body__container">
+        <header>
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo--swh.png" alt="logo starwars hospital" class="navbar__img">
+                    </a>
+                    <div class="navbar__icon" onclick="toggleMenu()">
+                        &#9776; 
+                    </div>
+                    <ul class="navbar__links" id="navLinks">
+                        <li class="navbar__links__item"><a href="index.html">Home</a></li>
+                        <li class="navbar__links__item"><a href="equipo.html">Equipo</a></li>
+                        <li class="navbar__links__item"><a href="contacto.html">Contacto</a></li>
+                        <li class="navbar__links__item navbar__links__item--cta"><a href="#">Reserva tu cita</a></li>
+                    </ul>
                 </div>
-                <ul class="navbar__links" id="navLinks">
-                    <li class="navbar__links__item"><a href="index.html">Home</a></li>
-                    <li class="navbar__links__item"><a href="equipo.html">Equipo</a></li>
-                    <li class="navbar__links__item"><a href="contacto.html">Contacto</a></li>
-                    <li class="navbar__links__item navbar__links__item--cta"><a href="#">Reserva tu cita</a></li>
-                </ul>
-            </div>
-        </nav>
+            </nav>
+        </header>
+        
+        <main>
 
-        <section class="section section--bienvenida">
-            <h1 class="section__title--primary"> Bienvenidx a Star Wars Hospital </h1>
-            <h2 class="section__title">Nuestro compromiso</h2>
-            <p class="section__text"><p>
-                Nuestro equipo de profesionales altamente capacitados y nuestras tecnologías de vanguardia están a tu disposición para garantizar que recibas los cuidados más efectivos, compasivos y adaptados a tus necesidades, sin importar de qué sistema estelar provengas.
-                
-                En Star Wars Hospital, la salud no tiene fronteras, y juntos navegaremos hacia un futuro más saludable y brillante. ¡Que la Fuerza de la sanación esté contigo!</p>
-            </p>
-        </section>
+            <section class="section section--bienvenida">
+                <h1 class="section__title--primary"> Bienvenidx a Star Wars Hospital </h1>
+                <h2 class="section__title">Nuestro compromiso</h2>
+                <p class="section__text"><p>
+                    Nuestro equipo de profesionales altamente capacitados y nuestras tecnologías de vanguardia están a tu disposición para garantizar que recibas los cuidados más efectivos, compasivos y adaptados a tus necesidades, sin importar de qué sistema estelar provengas.
+                    
+                    En Star Wars Hospital, la salud no tiene fronteras, y juntos navegaremos hacia un futuro más saludable y brillante. ¡Que la Fuerza de la sanación esté contigo!</p>
+                </p>
+            </section>
 
-        <section class="section section--equipo">
-            <h2 class="section__title">Te presentamos a nuestro equipo de profesionales</h2>
-            <p class="section__text">En Star Wars Hospital, contamos con un equipo de élite conformado por expertos médicos, científicos y especialistas de todos los rincones de la galaxia. Cada uno de nuestros profesionales aporta un profundo conocimiento en su campo, desde la biomedicina espacial hasta la cirugía interplanetaria, y están comprometidos con la salud y el bienestar de nuestros pacientes.</p>
-            <div class="cards__container cards__container--equipo">
-                <div class="card">         
-                    <img class="card__img" src="assets/images/profesional--yoda.png" alt="Imagen Dr. Yoda Jedi">
-                    <ul>
-                        <li class="card__text--nombre">Dr. Yoda Jedi</li>
-                        <li class="card__text--especialidad">Otorrinolaringología</li>
-                        <li class="card__text--resena">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus repellendus sit quae error! Nam, dicta repudiandae vitae commodi dolores, velit placeat eligendi quod, eos odit explicabo repellendus sint voluptas.</li>
-                    </ul>
+            <section class="section section--equipo">
+                <h2 class="section__title">Te presentamos a nuestro equipo de profesionales</h2>
+                <p class="section__text">En Star Wars Hospital, contamos con un equipo de élite conformado por expertos médicos, científicos y especialistas de todos los rincones de la galaxia. Cada uno de nuestros profesionales aporta un profundo conocimiento en su campo, desde la biomedicina espacial hasta la cirugía interplanetaria, y están comprometidos con la salud y el bienestar de nuestros pacientes.</p>
+                <div class="cards__container cards__container--equipo">
+                    <article class="card">         
+                        <img class="card__img" src="assets/images/profesional--yoda.png" alt="Imagen Dr. Yoda Jedi">
+                        <ul>
+                            <li class="card__text--nombre">Dr. Yoda Jedi</li>
+                            <li class="card__text--especialidad">Otorrinolaringología</li>
+                            <li class="card__text--resena">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus repellendus sit quae error! Nam, dicta repudiandae vitae commodi dolores, velit placeat eligendi quod, eos odit explicabo repellendus sint voluptas.</li>
+                        </ul>
+                    </article>
+                    <article class="card">        
+                        <img class="card__img" src="assets/images/profesional--c3po.png" alt="Imagen Dr. César Tapia">
+                        <ul>
+                            <li class="card__text--nombre">Dr. César Tapia</li>
+                            <li class="card__text--especialidad">Dermatología</li>
+                            <li class="card__text--resena">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus repellendus sit quae error! Nam, dicta repudiandae vitae commodi dolores, velit placeat eligendi quod, eos odit explicabo repellendus sint voluptas.</li>
+                        </ul>
+                    </article>
+                    <article class="card">       
+                        <img class="card__img" src="assets/images/profesional--chewie.png" alt="Imagen Dr. Chew Bacca">
+                        <ul>
+                            <li class="card__text--nombre">Dr. Chew Bacca</li>
+                            <li class="card__text--especialidad">Cardiología</li>
+                            <li class="card__text--resena">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus repellendus sit quae error! Nam, dicta repudiandae vitae commodi dolores, velit placeat eligendi quod, eos odit explicabo repellendus sint voluptas.</li>
+                        </ul>
+                    </article>
+                    <article class="card">        
+                        <img class="card__img" src="assets/images/profesional--vader.png" alt="Imagen Dr. Darth Vader">
+                        <ul>
+                            <li class="card__text--nombre">Dr. Darth Vader</li>
+                            <li class="card__text--especialidad">Cirujía General</li>
+                            <li class="card__text--resena">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus repellendus sit quae error! Nam, dicta repudiandae vitae commodi dolores, velit placeat eligendi quod, eos odit explicabo repellendus sint voluptas.</li>
+                        </ul>
+                    </article>
                 </div>
-                <div class="card">         
-                    <img class="card__img" src="assets/images/profesional--c3po.png" alt="Imagen Dr. César Tapia">
-                    <ul>
-                        <li class="card__text--nombre">Dr. César Tapia</li>
-                        <li class="card__text--especialidad">Dermatología</li>
-                        <li class="card__text--resena">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus repellendus sit quae error! Nam, dicta repudiandae vitae commodi dolores, velit placeat eligendi quod, eos odit explicabo repellendus sint voluptas.</li>
-                    </ul>
-                </div>
-                <div class="card">         
-                    <img class="card__img" src="assets/images/profesional--chewie.png" alt="Imagen Dr. Chew Bacca">
-                    <ul>
-                        <li class="card__text--nombre">Dr. Chew Bacca</li>
-                        <li class="card__text--especialidad">Cardiología</li>
-                        <li class="card__text--resena">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus repellendus sit quae error! Nam, dicta repudiandae vitae commodi dolores, velit placeat eligendi quod, eos odit explicabo repellendus sint voluptas.</li>
-                    </ul>
-                </div>
-                <div class="card">         
-                    <img class="card__img" src="assets/images/profesional--vader.png" alt="Imagen Dr. Darth Vader">
-                    <ul>
-                        <li class="card__text--nombre">Dr. Darth Vader</li>
-                        <li class="card__text--especialidad">Cirujía General</li>
-                        <li class="card__text--resena">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab minus repellendus sit quae error! Nam, dicta repudiandae vitae commodi dolores, velit placeat eligendi quod, eos odit explicabo repellendus sint voluptas.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <footer class="footer">
             <div class="footer__container">
@@ -114,7 +119,7 @@
                 <p>&copy; 2024 Tu Sitio Web. Todos los derechos reservados.</p>
             </div>
         </footer>
-    </main>
+    </div>
   
     <script src="assets/js/script.js"></script>
 </body>
